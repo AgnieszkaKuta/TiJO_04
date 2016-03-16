@@ -49,13 +49,23 @@ describe('app', function () {
     describe('areaOfTrapezoid', function () {
         it('should count trapezoid area', function () {
             expect(app.areaOfTrapezoid(2, 2, 2)).toEqual(4);
+            expect(app.areaOfTrapezoid(2, -2, 2)).toEqual(false);
+            expect(app.areaOfTrapezoid(2, 2, 0)).toEqual(0);
         });
     });
 
-            describe('areaOfTrapezoid', function () {
-                it('should count trapezoid area', function () {
-                    expect(app.areaOfTrapezoid(1,-2,0)).toEqual(false);
-                });
-
-            });
+    describe('maxArray', function () {
+        it('should point the biggest digit', function () {
+            expect(app.maxArray(2,4,2,5,8).toEqual(8));
+            expect(app.maxArray(stringuś,4,2,5,8).toEqual(false));
+            expect(app.maxArray(2,floatcik,2,[1,2], 5,8).toEqual(false));
+            expect(app.maxArray([1,2,3,4,5]).toEqual(false));
         });
+
+
+    });
+});
+
+
+
+
