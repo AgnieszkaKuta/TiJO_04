@@ -33,6 +33,29 @@ describe('app', function () {
         });
         it('should return false when b is equal 0', function () {
             expect(app.divide(101, 0)).toEqual(false);
+
+        });
+
+
+    });
+    describe('getDescendingNumbers', function () {
+        it('should return numbers from numberFrom to numberTo', function () {
+            expect(app.getDescendingNumbers(5, 1)).toEqual("5 4 3 2 1");
+            expect(app.getDescendingNumbers(1, 1)).toEqual(false);
+
+        });
+
+    });
+    describe('areaOfTrapezoid', function () {
+        it('should count trapezoid area', function () {
+            expect(app.areaOfTrapezoid(2, 2, 2)).toEqual(4);
         });
     });
-});
+
+            describe('areaOfTrapezoid', function () {
+                it('should count trapezoid area', function () {
+                    expect(app.areaOfTrapezoid(1,-2,0)).toEqual(false);
+                });
+
+            });
+        });
