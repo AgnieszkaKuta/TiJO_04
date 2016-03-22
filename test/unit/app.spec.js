@@ -64,6 +64,14 @@ describe('app', function () {
 
 
     });
+    describe('squareOdd', function () {
+        it('should square odds', function () {
+            expect(app.squareOdd(2,4,2,5,8).toEqual("2,4,2,25,8"));
+            expect(app.squareOdd(stringus,4,2,5,8).toEqual("stringus,4,2,25,8"));
+            expect(app.squareOdd(2,floatcik,2,[1,2], 5,8).toEqual(false));
+            expect(app.squareOdd([1,2,3,4,5]).toEqual(false));
+});
+});
 });
 
 
